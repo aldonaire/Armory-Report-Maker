@@ -116,7 +116,7 @@ canvas.resize-nesw{cursor:nesw-resize}
 .secnav button[aria-selected="true"]{background:var(--accent);color:var(--on-accent)}
 .secnav small{font-weight:600;opacity:.8;margin-left:4px}
 .next{justify-content:flex-end}
-#panel[data-sec]:not([data-sec="setup"]) #g-global,#panel[data-sec]:not([data-sec="setup"]) #g-lib,
+#panel[data-sec]:not([data-sec="setup"]) #g-global,
 #panel[data-sec="setup"] #g-meta,#panel[data-sec="setup"] #g-placers,
 #panel[data-sec="meta"] #g-placers,#panel[data-sec="placers"] #g-meta{display:none}
 @media (max-width:880px){
@@ -207,19 +207,6 @@ button.ico{border-radius:10px}
             <option value="1500">1500 × 1500 (high resolution)</option>
           </select>
         </label>
-      </section>
-
-      <section class="group" id="g-lib" data-pid="meta">
-        <div class="sec-h"><h2>Hero library</h2></div>
-        <p class="muted" id="libInfo"></p>
-        <label class="file"><input type="file" accept=".csv,text/csv" data-lib="csv"><span class="btn ghost">Load heroes CSV</span></label>
-        <label class="file"><input type="file" accept="image/*" multiple data-lib="assets"><span class="btn ghost">Add hero and background images</span></label>
-        <div class="actions">
-          <button type="button" class="ghost" data-act="lib-sample">Download sample CSV</button>
-          <button type="button" class="ghost" data-act="lib-clear">Clear library</button>
-        </div>
-        <p class="muted">CSV columns: type (adult or young), name, subtitle, hero_image, bg. Image columns hold file names. Upload the image files once; they stay saved in this browser.</p>
-        <div class="actions next"><button type="button" data-act="sec" data-id="meta">Next: Metagame</button></div>
       </section>
 
       <section class="group" id="g-meta" data-pid="meta">
@@ -371,6 +358,14 @@ function fitText(ctx, text, fontFn, maxW, start, min) {
   while (s > min) { ctx.font = fontFn(s); if (ctx.measureText(text).width <= maxW) return s; s -= 2; }
   return min;
 }
+function fitLabel(ctx, text, fontFn, maxW, start, min) {
+  const size = fitText(ctx, text, fontFn, maxW, start, min);
+  ctx.font = fontFn(size);
+  if (ctx.measureText(text).width <= maxW) return { text, size };
+  let label = text;
+  while (label.length && ctx.measureText(label + '...').width > maxW) label = label.slice(0, -1);
+  return { text: (label || '').trimEnd() + '...', size };
+}
 function wrapLines(ctx, text, maxW) {
   const words = text.split(/\s+/).filter(Boolean), lines = [];
   let line = '';
@@ -476,9 +471,9 @@ function drawMetaGrid(ctx, list, top, bottom) {
       ctx.fillStyle = '#fff'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
       ctx.font = sans(900, nsz);
       ctx.fillText(String(row.count), px + pw / 2, y + ch * 0.4);
-      const tsz = fitText(ctx, name, s => sans(800, s), pw - pad * 2, ch * 0.18, 8);
-      ctx.font = sans(800, tsz);
-      ctx.fillText(name, px + pw / 2, y + ch * 0.8);
+      const label = fitLabel(ctx, name, s => sans(800, s), pw - pad * 2, ch * 0.18, 8);
+      ctx.font = sans(800, label.size);
+      ctx.fillText(label.text, px + pw / 2, y + ch * 0.8);
       ctx.restore();
       ctx.strokeStyle = 'rgba(243,217,138,.6)'; ctx.lineWidth = 2; ctx.strokeRect(x, y, cw, ch);
       ctx.strokeStyle = 'rgba(243,217,138,.35)'; ctx.beginPath(); ctx.moveTo(x + ch, y); ctx.lineTo(x + ch, y + ch); ctx.stroke();
@@ -547,15 +542,15 @@ function drawMeta(ctx, ui) {
       ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
       ctx.shadowColor = 'rgba(0,0,0,.65)'; ctx.shadowBlur = 8; ctx.shadowOffsetY = 2;
       ctx.fillStyle = '#fff';
-      const nsz = fitText(ctx, name, s => sans(900, s), 480, sub ? rh * 0.4 : rh * 0.46, 18);
-      ctx.font = sans(900, nsz);
+      const label = fitLabel(ctx, name, s => sans(900, s), 480, sub ? rh * 0.4 : rh * 0.46, 18);
+      ctx.font = sans(900, label.size);
       if (sub) {
         const ssz = fitText(ctx, sub, s => sans(800, s), 480, rh * 0.17, 10);
-        ctx.font = sans(900, nsz);
-        ctx.fillText(name, bx + 22, y + rh * 0.38);
+        ctx.font = sans(900, label.size);
+        ctx.fillText(label.text, bx + 22, y + rh * 0.38);
         ctx.font = sans(800, ssz);
         ctx.fillText(sub, bx + 22, y + rh * 0.74);
-      } else ctx.fillText(name, bx + 22, y + rh / 2);
+      } else ctx.fillText(label.text, bx + 22, y + rh / 2);
       ctx.shadowColor = 'transparent'; ctx.shadowBlur = 0; ctx.shadowOffsetY = 0;
 
       const g = ctx.createLinearGradient(0, y, 0, y + rh);
@@ -806,7 +801,7 @@ function layerHTML(pl, key, label) {
     const e = libGet(pl.heroKey);
     src = !e ? '<p class="muted">Pick the hero used above. Its metagame image is used here.</p>'
       : e.heroImg ? '<p class="muted">Uses the hero image from the metagame.</p>'
-      : `<p class="muted warn">The metagame hero image ${e.heroFile ? '“' + esc(e.heroFile) + '” ' : ''}is missing. Add it in the Hero library.</p>`;
+      : `<p class="muted warn">The metagame hero image ${e.heroFile ? '“' + esc(e.heroFile) + '” ' : ''}is missing.</p>`;
   } else src = fileCtl(o, 'img', ly.imgName, 'Choose image');
   return `<fieldset class="layer" data-layer="${key}"><legend>${label}</legend>
     ${src}
@@ -882,7 +877,7 @@ function renderTabs() {
 }
 
 function renderAll() {
-  renderLibrary(); renderRows(); renderPlacers(); renderLogos(); renderTabs();
+  renderRows(); renderPlacers(); renderLogos(); renderTabs();
   $('#bgName').textContent = state.bgName || 'Default purple';
   schedule();
 }
@@ -906,7 +901,7 @@ function tryUrl(ref) {
   if (!isHttp) return;
   const img = new Image();
   img.crossOrigin = 'anonymous';
-  img.onload = () => { urlImages.set(ref, img); resolveLib(); renderLibrary(); renderRows(); schedule(); };
+  img.onload = () => { urlImages.set(ref, img); resolveLib(); renderRows(); schedule(); };
   img.src = ref;
 }
 function resolveLib() { for (const e of state.lib) { e.heroImg = lookupImg(e.heroFile); e.bgImg = lookupImg(e.bgFile); } }
@@ -995,16 +990,6 @@ async function addAssets(files) {
   }
   resolveLib(); renderAll();
   setStatus(`Added ${n} image${n === 1 ? '' : 's'} to the library`);
-}
-
-function renderLibrary() {
-  const n = state.lib.length, ad = state.lib.filter(e => e.type === 'adult').length;
-  const miss = state.lib.filter(e => !e.heroImg || !e.bgImg).length;
-  const imgs = assets.size + urlImages.size;
-  let t = `${n} hero${n === 1 ? '' : 'es'} loaded: ${ad} adult, ${n - ad} young. ${imgs} image${imgs === 1 ? '' : 's'} saved.`;
-  if (miss) t += ` ${miss} hero${miss === 1 ? ' has' : 'es have'} a missing image.`;
-  if (!n) t = 'No heroes yet. Load your heroes CSV, then add the hero and background images.';
-  $('#libInfo').textContent = t;
 }
 
 const SAMPLE_CSV = 'type,name,subtitle,hero_image,bg\nadult,Aurora,Emissary of Lightning,aurora.png,aurora-bg.jpg\nadult,Arakni,Solitary Confinement,arakni-solitary.png,arakni-bg.jpg\nyoung,Oldhim,,oldhim-young.png,oldhim-bg.jpg\n';
@@ -1153,7 +1138,14 @@ document.addEventListener('click', e => {
       idb.clear(); try { localStorage.removeItem('armory.csv'); } catch (_) {}
       b.dataset.armed = ''; b.textContent = 'Clear library';
       break;
-    case 'logo-del': state.logos = state.logos.filter(l => l.id !== id); break;
+    case 'logo-del': {
+      const removed = state.logos.find(l => l.id === id);
+      if (removed && removed.id === 'default-logo') {
+        try { localStorage.setItem('armory.hideDefaultLogo', '1'); } catch (_) {}
+      }
+      state.logos = state.logos.filter(l => l.id !== id);
+      break;
+    }
     case 'pl-add': {
       const n = state.placers.length + 1;
       const ord = n === 1 ? '' : n === 2 ? '2ND' : n === 3 ? '3RD' : n + 'TH';
@@ -1420,6 +1412,23 @@ $('#dlAll').addEventListener('click', async () => {
 $('#g-size').value = String(state.size);
 $('#g-mode').value = state.mode;
 $('#g-date').value = state.date;
+let hideDefaultLogo = false;
+try { hideDefaultLogo = localStorage.getItem('armory.hideDefaultLogo') === '1'; } catch (_) {}
+if (!hideDefaultLogo) {
+  const defaultLogo = new Image();
+  defaultLogo.onload = () => {
+    state.logos = state.logos.filter(l => l.id !== 'default-logo');
+    state.logos.unshift({
+      id: 'default-logo',
+      img: defaultLogo,
+      url: 'Assets/image_2026-09-20_011048781-removebg-preview (1).png',
+      name: 'Armory logo',
+      side: 'left'
+    });
+    renderAll();
+  };
+  defaultLogo.src = 'Assets/image_2026-09-20_011048781-removebg-preview (1).png';
+}
 renderAll();
 (async () => {
   /* Shipped library: heroes.json next to this page (built from heroes.csv by tools/build-library.mjs).
