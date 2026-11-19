@@ -1,0 +1,828 @@
+[
+  {
+    "type": "young",
+    "name": "Arakni",
+    "subtitle": "",
+    "hero": "Assets/Young/image_2026-11-19_182851912.png",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "young",
+    "name": "Arakni",
+    "subtitle": "Solitary Confinement",
+    "hero": "Assets/Young/image_2026-11-19_182822209.png",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "young",
+    "name": "Arakni",
+    "subtitle": "Web of Deceit",
+    "hero": "Assets/Young/image_2026-11-19_182754294.png",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "young",
+    "name": "Aurora",
+    "subtitle": "",
+    "hero": "Assets/Young/Gemini_Generated_Image_rmwko4rmwko4rmwk.png",
+    "bg": "Assets/Hero-BG/aria_candlehold_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Aurora",
+    "subtitle": "Emissary of Lightning",
+    "hero": "Assets/Young/Gemini_Generated_Image_ylsx8fylsx8fylsx.png",
+    "bg": "Assets/Hero-BG/OMN_Hero_Selector_BG_Aart.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Azalea",
+    "subtitle": "",
+    "hero": "Assets/Young/image_2026-11-19_184701676.png",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "young",
+    "name": "Azalea",
+    "subtitle": "Lone Vigilante",
+    "hero": "Assets/Young/image_2026-11-19_185338286.png",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "young",
+    "name": "Baalghor",
+    "subtitle": "Omen of the End",
+    "hero": "Assets/Young/Baalghor_Omen-of-the-End-hero-selector.webp",
+    "bg": "Assets/Hero-BG/demonastery_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Babaza",
+    "subtitle": "",
+    "hero": "Assets/Young/image_2026-11-19_185456084.png",
+    "bg": "Assets/Hero-BG/savage_lands_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Benji",
+    "subtitle": "the Piercing Wind",
+    "hero": "Assets/Young/image_2026-11-19_184721916.png",
+    "bg": "Assets/Hero-BG/misteria_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Betsy",
+    "subtitle": "",
+    "hero": "Assets/Young/image_2026-11-19_184844686.png",
+    "bg": "Assets/Hero-BG/deathmatch_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Blaze",
+    "subtitle": "Firemind",
+    "hero": "Assets/Young/DRG-DRA-Blaze-Firemind-IsuardiTherianto-scaled.webp",
+    "bg": "Assets/Hero-BG/volcor_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Boltyn",
+    "subtitle": "",
+    "hero": "Assets/Young/image_2026-11-19_185046548.png",
+    "bg": "Assets/Hero-BG/solana_bg-scaled-2.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Bravo",
+    "subtitle": "",
+    "hero": "Assets/Young/image_2026-11-19_185108953.png",
+    "bg": "Assets/Hero-BG/Everfest_BG.webp"
+  },
+  {
+    "type": "young",
+    "name": "Bravo",
+    "subtitle": "Flattering Showman",
+    "hero": "Assets/Young/GUARDIAN-HERO-Bravo-Flattering-Showman-WisnuTan-1-2048x1024.webp",
+    "bg": "Assets/Hero-BG/deathmatch_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Briar",
+    "subtitle": "",
+    "hero": "Assets/Young/image_2026-11-19_185538473.png",
+    "bg": "Assets/Hero-BG/aria_candlehold_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Chane",
+    "subtitle": "",
+    "hero": "Assets/Young/image_2026-11-19_185602281.png",
+    "bg": "Assets/Hero-BG/demonastery_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Cindra",
+    "subtitle": "",
+    "hero": "Assets/Young/image_2026-11-19_185203540.png",
+    "bg": "Assets/Hero-BG/volcor_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Dash",
+    "subtitle": "",
+    "hero": "Assets/Young/image_2026-11-19_185644941.png",
+    "bg": "Assets/Hero-BG/metrix_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Dash",
+    "subtitle": "Database",
+    "hero": "Assets/Young/image_2026-11-19_185744434.png",
+    "bg": "Assets/Hero-BG/metrix_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Data Doll MKII",
+    "subtitle": "",
+    "hero": "Assets/Young/CRU-MECH-HERO-Data-Doll-MK-I-Tulinov-Roman-scaled.webp",
+    "bg": "Assets/Hero-BG/metrix_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Dorinthea",
+    "subtitle": "",
+    "hero": "Assets/Young/image_2026-11-19_185809782.png",
+    "bg": "Assets/Hero-BG/solana_bg-scaled-2.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Dorinthea",
+    "subtitle": "Quicksilver Prodigy",
+    "hero": "Assets/Young/image_2026-11-19_185912781.png",
+    "bg": "Assets/Hero-BG/solana_bg-scaled-2.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Dr. Mortimer",
+    "subtitle": "",
+    "hero": "Assets/Young/image_2026-11-19_182520241.png",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "young",
+    "name": "Dromai",
+    "subtitle": "",
+    "hero": "Assets/Young/image_2026-11-19_185945991.png",
+    "bg": "Assets/Hero-BG/volcor_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Enigma",
+    "subtitle": "",
+    "hero": "Assets/Young/image_2026-11-19_190011501.png",
+    "bg": "Assets/Hero-BG/misteria_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Fai",
+    "subtitle": "",
+    "hero": "Assets/Young/image_2026-11-19_190047398.png",
+    "bg": "Assets/Hero-BG/volcor_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Fang",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/volcor_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Florian",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/aria_candlehold_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Gravy Bones",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/high_seas_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Hala",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/solana_bg-scaled-2.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Huxley",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "young",
+    "name": "Ira",
+    "subtitle": "Crimson Haze",
+    "hero": "",
+    "bg": "Assets/Hero-BG/misteria_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Iyslander",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/aria_isenloft_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Kano",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/volcor_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Kassai",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/deathmatch_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Kassai",
+    "subtitle": "Cintari Sellsword",
+    "hero": "",
+    "bg": "Assets/Hero-BG/volcor_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Katsu",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/misteria_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Kavdaen",
+    "subtitle": "Trader of Skins",
+    "hero": "",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "young",
+    "name": "Kayo",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/savage_lands_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Kayo",
+    "subtitle": "Berserker Runt",
+    "hero": "",
+    "bg": "Assets/Hero-BG/savage_lands_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Kayo",
+    "subtitle": "Strong-arm",
+    "hero": "",
+    "bg": "Assets/Hero-BG/deathmatch_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Killjoy",
+    "subtitle": "the Crooked Blade",
+    "hero": "Assets/Young/WARRIOR-THIEF-HERO-Killjoy-the-Crooked-Blade-HenriqueLindner-2048x1024.webp",
+    "bg": "Assets/Hero-BG/deathmatch_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Levia",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/demonastery_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Lexi",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/aria_volthaven_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Lyath Goldmane",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/deathmatch_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Malice",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/demonastery_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Marlynn",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/high_seas_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Maxx Nitro",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/metrix_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Min",
+    "subtitle": "Half-Genius",
+    "hero": "",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "young",
+    "name": "Mortimer",
+    "subtitle": "Living Virus",
+    "hero": "",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "young",
+    "name": "Nuu",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/misteria_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Oldhim",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/aria_isenloft_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Olympia",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/deathmatch_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Oscilio",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/aria_volthaven_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Oscilio",
+    "subtitle": "Scion of the Third Age",
+    "hero": "",
+    "bg": "Assets/Hero-BG/OMN_Hero_Selector_BG_Aart.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Pleiades",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/deathmatch_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Prism",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/solana_bg-scaled-2.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Prism",
+    "subtitle": "Advent of Thrones",
+    "hero": "",
+    "bg": "Assets/Hero-BG/solana_bg-scaled-2.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Puffin",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/high_seas_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Rhinar",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/savage_lands_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Riptide",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "young",
+    "name": "Scurv",
+    "subtitle": "Stowaway",
+    "hero": "",
+    "bg": "Assets/Hero-BG/high_seas_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Teklovossen",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/metrix_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Terra",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/aria_candlehold_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Tuffnut",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/deathmatch_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Uzuri",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/misteria_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Valda Brightaxe",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/Everfest_BG.webp"
+  },
+  {
+    "type": "young",
+    "name": "Verdance",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/aria_candlehold_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Victor Goldmane",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/solana_bg-scaled-2.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Viserai",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/demonastery_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Viserai",
+    "subtitle": "Between Worlds",
+    "hero": "",
+    "bg": "Assets/Hero-BG/demonastery_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Vyle",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "young",
+    "name": "Vynnset",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/demonastery_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Zane",
+    "subtitle": "Broadly Beloved",
+    "hero": "",
+    "bg": "Assets/Hero-BG/deathmatch_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Zen",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/misteria_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Zuul",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/savage_lands_bg-scaled-1.jpg"
+  },
+  {
+    "type": "young",
+    "name": "Zyggy",
+    "subtitle": "",
+    "hero": "",
+    "bg": "Assets/Hero-BG/OMN_Hero_Selector_BG_Aart.jpg"
+  },
+  {
+    "type": "young",
+    "name": "a-01",
+    "subtitle": "First Cogwarden",
+    "hero": "Assets/Young/image_2026-11-19_185231971.png",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Arakni",
+    "subtitle": "5L!p3d 7hRu 7h3 cR4X",
+    "hero": "Assets/Adult/CHAOS-ASN-HERO-Arakni-5Lp3d-7hRu-73h-cR4X-DominikMayer-scaled.png",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Arakni",
+    "subtitle": "Huntsman",
+    "hero": "Assets/Adult/ASSASSIN-HERO-Arakni-Huntsman-IsuardiTherianto-scaled.webp",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Aurora",
+    "subtitle": "Legacy of Tempest",
+    "hero": "Assets/Adult/LIGHTNING-RUNEBLADE-HERO-Aurora-Legacy-of-Tempest-AsurMisoa-1-scaled.webp",
+    "bg": "Assets/Hero-BG/OMN_Hero_Selector_BG_Aart.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Azalea",
+    "subtitle": "Ace of Spades",
+    "hero": "",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Babaza",
+    "subtitle": "Bloodbeat Heartfather",
+    "hero": "",
+    "bg": "Assets/Hero-BG/savage_lands_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Betsy",
+    "subtitle": "Skin in the Game",
+    "hero": "Assets/Adult/GUARDIAN-HERO-Betsy-Odds-on-Favorite-SimonDominic-scaled.webp",
+    "bg": "Assets/Hero-BG/deathmatch_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Bravo",
+    "subtitle": "Showstopper",
+    "hero": "Assets/Adult/GUARDIAN-ALP_T-Bravo-Alexander-Mokhov-1-scaled.webp",
+    "bg": "Assets/Hero-BG/Everfest_BG.webp"
+  },
+  {
+    "type": "adult",
+    "name": "Dorinthea",
+    "subtitle": "Ironsong",
+    "hero": "Assets/Adult/WARRIOR-ALP_T-Dorinthea-Ironsong-Lius-Lasahido-scaled.webp",
+    "bg": "Assets/Hero-BG/solana_bg-scaled-2.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Dr. Mortimer",
+    "subtitle": "Blight of the Pits",
+    "hero": "Assets/Adult/ASN-HERO-Dr-Mortimer-Blight-of-the-Pits-OthonNikolaidis-1-scaled.webp",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Fang",
+    "subtitle": "Dracai of Blades",
+    "hero": "Assets/Adult/ROYAL-DRA-WARRIOR-HERO-Fang-Dracai-of-Blades-BillyChristian-scaled.webp",
+    "bg": "Assets/Hero-BG/volcor_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Gravy Bones",
+    "subtitle": "Shipwrecked Looter",
+    "hero": "Assets/Adult/PIRATE-NECRO-HERO-Gravy-Bones-Shipwrecked-Looter-NathanielHimawan-scaled.webp",
+    "bg": "Assets/Hero-BG/high_seas_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Hala",
+    "subtitle": "Bladesaint of the Vow",
+    "hero": "Assets/Adult/WARRIOR-HERO-Hala-Goldenhelm-Paragon-of-Sol-FedericoMusetti-scaled.webp",
+    "bg": "Assets/Hero-BG/solana_bg-scaled-2.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Huxley",
+    "subtitle": "Racketeer",
+    "hero": "",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Ira",
+    "subtitle": "Scarlet Revenger",
+    "hero": "Assets/Adult/NINJA-HERO-Ira-Scarlet-Revenger-STUDIO-1-scaled.webp",
+    "bg": "Assets/Hero-BG/misteria_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Jarl Vetreidi",
+    "subtitle": "",
+    "hero": "Assets/Adult/ELE-GUARDIAN-HERO-Jarl-Vetreioi-FedericoMusetti-scaled.webp",
+    "bg": "Assets/Hero-BG/aria_isenloft_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Katsu",
+    "subtitle": "the Wanderer",
+    "hero": "Assets/Adult/NINJA-ALP_T-Katsu-Adolfo-Navarro-scaled.webp",
+    "bg": "Assets/Hero-BG/misteria_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Kayo",
+    "subtitle": "Underhanded Cheat",
+    "hero": "Assets/Adult/centered_0013_REVILED-BRUTE-HERO-Kayo-Underhanded-Cheat-JessadaSutthi-scaled.png",
+    "bg": "Assets/Hero-BG/deathmatch_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Levia",
+    "subtitle": "Shadowborn Abomination",
+    "hero": "Assets/Adult/SHADOW-BRUTE-HERO-Levia-Beckoner-of-Darkness-WisnuTan-scaled.webp",
+    "bg": "Assets/Hero-BG/demonastery_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Lyath Goldmane",
+    "subtitle": "Vile Savant",
+    "hero": "Assets/Adult/REVILED-GUARDIAN-HERO-Lyath-Goldmane-Short-Tempered-NathanielHimawan-1-scaled.webp",
+    "bg": "Assets/Hero-BG/deathmatch_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Malice",
+    "subtitle": "Domina of the Dead",
+    "hero": "Assets/Adult/SHADOW-NECRO-HERO-Malice-Adult-JoaoGSantos-scaled.webp",
+    "bg": "Assets/Hero-BG/demonastery_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Marlynn",
+    "subtitle": "Treasure Hunter",
+    "hero": "Assets/Adult/PIRATE-RANGER-HERO-Marlynn-Treasure-Hunter-SamYang-scaled.webp",
+    "bg": "Assets/Hero-BG/high_seas_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Maxx 'The Hype' Nitro",
+    "subtitle": "",
+    "hero": "Assets/Adult/MECH-HERO-Maxx-Nitro-_The-Breaker_-JessadaSutthi-scaled.webp",
+    "bg": "Assets/Hero-BG/metrix_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Min",
+    "subtitle": "Genius",
+    "hero": "",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Olympia",
+    "subtitle": "Prized Fighter",
+    "hero": "Assets/Adult/WARRIOR-HERO-Olympia-Prized-Fighter-JosephQiu-scaled.webp",
+    "bg": "Assets/Hero-BG/deathmatch_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Oscilio",
+    "subtitle": "Forked Continuum",
+    "hero": "Assets/Adult/LIGHTNING-WIZARD-HERO-Oscilio-Scion-of-the-Third-Age-NathanielHimawan-1-scaled.webp",
+    "bg": "Assets/Hero-BG/OMN_Hero_Selector_BG_Aart.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Pleiades",
+    "subtitle": "Superstar",
+    "hero": "Assets/Adult/REVERED-GUARDIAN-HERO-Pleiades-Superstar-LiviaPrima-1-scaled.webp",
+    "bg": "Assets/Hero-BG/deathmatch_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Puffin",
+    "subtitle": "Hightail",
+    "hero": "Assets/Adult/PIRATE-MECH-HERO-Puffin-Full-Steam-Ahead-ArifWijaya-scaled.webp",
+    "bg": "Assets/Hero-BG/high_seas_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Rhinar",
+    "subtitle": "Reckless Rampage",
+    "hero": "Assets/Adult/BRUTE-HERO-Rhinar-Reckless-Rampage-Deathmatch-WisnuTan-28-scaled.webp",
+    "bg": "Assets/Hero-BG/savage_lands_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Riptide",
+    "subtitle": "Lurker of the Deep",
+    "hero": "Assets/Adult/UPDATED-RANGER-HERO-Riptide-JosephQiu-scaled.webp",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Ser Boltyn",
+    "subtitle": "Breaker of Dawn",
+    "hero": "Assets/Adult/MON-LIGHT-WARRIOR-HERO-Ser-Boltyn-Breaker-of-Dawn-Nikolay-Moskvin-scaled.webp",
+    "bg": "Assets/Hero-BG/solana_bg-scaled-2.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Teklovossen",
+    "subtitle": "Esteemed Magnate",
+    "hero": "Assets/Adult/fix_MECH-HERO-Professor-Teklovossen-Esteemed-Magnate-SimonDominicBrewer-scaled.webp",
+    "bg": "Assets/Hero-BG/metrix_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Tuffnut",
+    "subtitle": "Bumbling Hulkster",
+    "hero": "Assets/Adult/REVERED-BRUTE-HERO-Tuffnut-Bumbling-Hulkster-WisnuTan-1-scaled.webp",
+    "bg": "Assets/Hero-BG/deathmatch_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Uzuri",
+    "subtitle": "Switchblade",
+    "hero": "Assets/Adult/ASN-HERO-Uzuri-JessadaSutthi-scaled.webp",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Valda",
+    "subtitle": "Seismic Impact",
+    "hero": "Assets/Adult/GUARDIAN-HERO-Valda-Brightaxe-Seismic-Impact-WisnuTan-scaled.webp",
+    "bg": "Assets/Hero-BG/Everfest_BG.webp"
+  },
+  {
+    "type": "adult",
+    "name": "Viserai",
+    "subtitle": "the Forsaken",
+    "hero": "Assets/Adult/SHADOW-RUNEBLADE-HERO-Viserai-the-Forsaken-NathanielHimawan-scaled.webp",
+    "bg": "Assets/Hero-BG/demonastery_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Vyle",
+    "subtitle": "Catalyst of Collapse",
+    "hero": "",
+    "bg": "Assets/Hero-BG/pits_bg-scaled-1%20(1).jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Vynnset",
+    "subtitle": "Iron Maiden",
+    "hero": "Assets/Adult/SHADOW-RUNEBLADE-HERO-Vynnset-Disciple-of-Pain-FedericoMusetti-scaled.webp",
+    "bg": "Assets/Hero-BG/demonastery_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Zuul",
+    "subtitle": "Clubcaste",
+    "hero": "",
+    "bg": "Assets/Hero-BG/savage_lands_bg-scaled-1.jpg"
+  },
+  {
+    "type": "adult",
+    "name": "Zyggy Starlight",
+    "subtitle": "",
+    "hero": "Assets/Adult/LIGHTNING-ILLUS-HERO-Zyggy-Starlight-JessadaSutthi-scaled.webp",
+    "bg": "Assets/Hero-BG/OMN_Hero_Selector_BG_Aart.jpg"
+  }
+]
