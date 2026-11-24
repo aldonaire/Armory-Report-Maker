@@ -9,7 +9,7 @@
 //   Assets/Young/     hero art for young heroes
 //   Assets/Hero-BG/   backgrounds
 //
-// No dependencies. Run it on your machine, then commit heroes.json.
+// No dependencies. Run it on your machine to update heroes.json and the inline library.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -107,7 +107,18 @@ for (const r of data) {
   out.push(entry);
 }
 
-fs.writeFileSync(path.join(root, 'heroes.json'), JSON.stringify(out, null, 2) + '\n');
+const json = JSON.stringify(out, null, 2) + '\n';
+fs.writeFileSync(path.join(root, 'heroes.json'), json);
+
+const indexPath = path.join(root, 'index.html');
+const indexHtml = fs.readFileSync(indexPath, 'utf8');
+const librarySlot = /(<script id="hero-library-json" type="application\/json">)[\s\S]*?(<\/script>)/;
+if (!librarySlot.test(indexHtml)) {
+  console.error('Cannot find the inline hero library slot in index.html');
+  process.exit(1);
+}
+const inlineJson = JSON.stringify(out).replace(/</g, '\\u003c');
+fs.writeFileSync(indexPath, indexHtml.replace(librarySlot, (_, start, end) => start + inlineJson + end));
 
 /* ---- report ---- */
 let total = 0; const big = [];
